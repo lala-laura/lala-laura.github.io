@@ -1,0 +1,312 @@
+body {
+  background-image: linear-gradient(#460781, #1f246b, #28308a, #4848b3);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #5d5e6d;
+  color: #f2e8e6;
+  font-family: 'Fira Sans', sans-serif, Arial;
+  font-weight: 300;
+  margin: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif, Arial;
+  font-weight: 300;
+}
+h1 {
+  font-size: 44px;
+  color: #fff;
+  text-decoration: underline solid #78b8ec 1.5px;
+}
+h2 {
+  font-size: 34px;
+  text-decoration: underline solid #78b8ec 1.5px;
+  color: #fff;
+}
+h3 {
+  text-align: center;
+  font-size: 30px;
+  color: #bad9f2;
+}
+h4 {
+  font-size: 28px;
+  color: #bad9f2;
+}
+h5 {
+  font-size: 26px;
+  color: #bad9f2;
+}
+
+h6 {
+  font-size: 26px;
+  color: #bad9f2;
+}
+.about h4 {
+  margin: 4px;
+  font-weight: 400;
+}
+
+.contact h5 {
+  margin: 35px 25px 0px 4px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.about-img {
+  display: none;
+}
+
+.title {
+  text-align: center;
+}
+
+.title-portfolio {
+  margin-bottom: 5px;
+}
+.title-name {
+  margin-top: 5px;
+  font-size: 30px;
+}
+.info-welcome {
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  margin: 15px;
+}
+
+.welcome h3 {
+  color: #ffffff;
+  margin-top: 50px;
+  text-align: center;
+}
+.small-welcome-text {
+  font-size: 16px;
+  color: #ffbbee;
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  display: inline-flex;
+  text-transform: uppercase;
+}
+.about-img {
+  margin: 50px 0px 0px 20px;
+}
+.laura-img {
+  width: 125px;
+  border-radius: 20px;
+  border: 4px solid rgb(44, 37, 143);
+  box-shadow: 2px 2px 2px 1px rgba(69, 135, 211, 0.5);
+}
+.img-linkedin {
+  width: 70px;
+  margin: 5px 0px 0px 60px;
+}
+.contact,
+.contact-email {
+  color: #f2e8e5;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/* --------LOGO -------- */
+.logo {
+  text-align: right;
+}
+.logo-img {
+  width: 95px;
+}
+/* ----------NAVIGATION ---------- */
+
+.nav-page {
+  padding: 14px 0px;
+  list-style: none;
+  color: #000;
+  background-color: FFF;
+}
+.page-name {
+  font-size: 21px;
+}
+.menu {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  left: 100%;
+  right: 0;
+  top: 1rem;
+  flex-direction: row;
+  text-align: center;
+  margin: 0px 140px 0px 100px;
+  gap: 2rem;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.mobile-icon {
+  display: block;
+  cursor: pointer;
+  left: 10px;
+  top: 2rem;
+  position: absolute;
+}
+
+.menu-line {
+  display: block;
+  width: 55px;
+  height: 6px;
+  margin: 0px 0px 10px 12px;
+  background-color: #fff;
+  border-radius: 13px;
+}
+.menu.active {
+  left: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ffbbee;
+  font-weight: 500;
+}
+
+a {
+  color: #78b8ec;
+}
+a:hover {
+  color: #78b8ec;
+}
+.email-address:hover {
+  color: #a0a5ec;
+}
+/* ---- FOOTER ---- */
+footer {
+  font-size: 13px;
+  padding: 10px;
+  text-align: right;
+  color: #bad9f2;
+}
+
+/* -------------@media------------- */
+/* ---------min-width 768--------- */
+@media (min-width: 768px) {
+  body {
+    margin: 40px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+  h4 {
+    font-size: 32px;
+  }
+  h5 {
+    font-size: 30px;
+  }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+  }
+  .about-img {
+    display: block;
+    margin: 0px;
+    margin: 50px 0px 0px 70px;
+  }
+  .laura-img {
+    width: 170px;
+  }
+  .info-welcome {
+    display: block;
+  }
+
+  .welcome {
+    margin: 0px 0px;
+  }
+  .welcome-img-mobile {
+    display: none;
+  }
+  .small-welcome-text {
+    font-size: 20px;
+  }
+  .logo {
+    text-align: left;
+    margin-top: 0px;
+  }
+  .logo-img {
+    width: 140px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 420px 1fr;
+  }
+  .img-linkedin {
+    margin: 0px;
+  }
+
+  .logo-img:hover {
+    content: url(../img/logo-laura-2.svg);
+  }
+
+  /* ---------- NAVIGATION 768 ---------- */
+  .nav-menu {
+    display: block;
+  }
+  .page-name {
+    font-size: 30px;
+  }
+  .menu {
+    transition: none;
+    margin: 35px 180px 0px 220px;
+    left: 0;
+  }
+
+  .mobile-icon {
+    display: none;
+  }
+}
+/* ---------min-width 1040--------- */
+@media (min-width: 1040px) {
+}
+
+/* ---------max 478/min 320--------- */
+@media (max-width: 478px) and (min-width: 320px) {
+  body {
+    margin: 14px;
+  }
+  .logo-img {
+    width: 70px;
+  }
+  .menu {
+    margin: 0px 90px 0px 70px;
+    gap: 0.5rem;
+  }
+  .mobile-icon {
+    left: 9px;
+    top: 1.8rem;
+  }
+
+  .menu-line {
+    width: 45px;
+    height: 5px;
+    margin-left: 8px;
+  }
+  .page-name {
+    font-size: 17px;
+  }
+  .welcome h3 {
+    margin-top: 15px;
+  }
+  .contact-grid {
+    display: block;
+  }
+
+  .img-linkedin {
+    margin-left: 10px;
+  }
+}
