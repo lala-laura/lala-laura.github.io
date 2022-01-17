@@ -33,7 +33,6 @@ h2 {
   color: #fff;
 }
 h3 {
-  text-align: center;
   font-size: 30px;
   color: #bad9f2;
 }
@@ -362,4 +361,12 @@ footer {
     margin-left: 10px;
     width: 60px;
   }
+}
+/* --------------- Skills Page --------------- */
+
+.skills-list {
+  list-style: none;
+  line-height: 200%;
+  font-size: 24px;
+  text-indent: 10%;
 }
