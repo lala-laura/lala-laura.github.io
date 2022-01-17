@@ -203,7 +203,7 @@ footer {
   color: #bad9f2;
 }
 
-/* -------------@media------------- */
+/* -------------HOME @media------------- */
 /* ---------min-width 768--------- */
 @media (min-width: 768px) {
   body {
@@ -363,10 +363,25 @@ footer {
   }
 }
 /* --------------- Skills Page --------------- */
-
+.sub-page-info {
+  margin: 0px 30px;
+}
 .skills-list {
   list-style: none;
   line-height: 200%;
   font-size: 24px;
-  text-indent: 10%;
+}
+
+.skills-list li {
+  display: block;
+  text-align: left;
+}
+
+/* -------------SKILLS @media------------- */
+/* ---------min-width 768--------- */
+@media (min-width: 768px) {
+  .skills-list {
+    text-align: left;
+    text-indent: 10%;
+  }
 }
