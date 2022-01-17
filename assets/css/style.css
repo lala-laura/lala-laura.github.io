@@ -6,7 +6,11 @@ body {
   color: #f2e8e6;
   font-family: 'Fira Sans', sans-serif, Arial;
   font-weight: 300;
-  margin: 18px;
+  margin: 24px;
+  border: 4px solid #2c258f;
+  box-shadow: /*40px 40px 40px 80px #5485cf80*/ #08000c 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, #006eff 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 h1,
@@ -76,24 +80,28 @@ p {
   margin-top: 5px;
   font-size: 30px;
 }
+
+.info {
+  margin: 0px 35px;
+}
 .info-welcome {
   display: grid;
   grid-template-columns: 1fr 150px;
   margin: 15px;
 }
 
-.welcome h3 {
+.welcome-text {
   color: #ffffff;
-  margin-top: 50px;
+  margin: 5px 20px 10px 0px;
   text-align: center;
-}
-.small-welcome-text {
-  font-size: 16px;
-  color: #ffbbee;
-  transform: rotate(5deg);
-  -webkit-transform: rotate(5deg);
+  /* transform: rotate(4deg);
+  -webkit-transform: rotate(4deg); */
   display: inline-flex;
   text-transform: uppercase;
+}
+
+.about-text {
+  text-align: justify;
 }
 .about-img {
   margin: 50px 0px 0px 20px;
@@ -111,6 +119,7 @@ p {
 .contact,
 .contact-email {
   color: #f2e8e5;
+  text-align: left;
 }
 
 .contact-grid {
@@ -124,7 +133,15 @@ p {
 .logo-img {
   width: 95px;
 }
+.email-address:hover {
+  color: #a0a5ec;
+}
+
 /* ----------NAVIGATION ---------- */
+
+.navigation {
+  margin: 10px;
+}
 
 .nav-page {
   padding: 14px 0px;
@@ -133,7 +150,7 @@ p {
   background-color: FFF;
 }
 .page-name {
-  font-size: 21px;
+  font-size: 20px;
 }
 .menu {
   display: flex;
@@ -141,11 +158,11 @@ p {
   justify-content: space-between;
   left: 100%;
   right: 0;
-  top: 1rem;
+  top: 1.5rem;
   flex-direction: row;
   text-align: center;
-  margin: 0px 140px 0px 100px;
-  gap: 2rem;
+  margin: 10px 160px 0px 120px;
+  gap: 0.5rem;
   padding: 0px;
   overflow: hidden;
 }
@@ -153,8 +170,8 @@ p {
 .mobile-icon {
   display: block;
   cursor: pointer;
-  left: 10px;
-  top: 2rem;
+  left: 26px;
+  top: 2.5rem;
   position: absolute;
 }
 
@@ -172,19 +189,13 @@ p {
 
 .menu a {
   text-decoration: none;
-  color: #ffbbee;
+  color: #c8d7ef;
   font-weight: 500;
 }
-
 a {
   color: #78b8ec;
 }
-a:hover {
-  color: #78b8ec;
-}
-.email-address:hover {
-  color: #a0a5ec;
-}
+
 /* ---- FOOTER ---- */
 footer {
   font-size: 13px;
@@ -197,7 +208,7 @@ footer {
 /* ---------min-width 768--------- */
 @media (min-width: 768px) {
   body {
-    margin: 40px;
+    margin: 50px;
   }
 
   h3 {
@@ -209,17 +220,12 @@ footer {
   h5 {
     font-size: 30px;
   }
-  .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 260px;
+  .logo {
+    text-align: left;
+    margin-top: 0px;
   }
-  .about-img {
-    display: block;
-    margin: 0px;
-    margin: 50px 0px 0px 70px;
-  }
-  .laura-img {
-    width: 170px;
+  .logo-img {
+    width: 140px;
   }
   .info-welcome {
     display: block;
@@ -231,17 +237,19 @@ footer {
   .welcome-img-mobile {
     display: none;
   }
-  .small-welcome-text {
-    font-size: 20px;
-  }
-  .logo {
-    text-align: left;
-    margin-top: 0px;
-  }
-  .logo-img {
-    width: 140px;
-  }
 
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 210px;
+  }
+  .about-img {
+    display: block;
+    margin: 0px;
+    margin: 60px 0px 0px 30px;
+  }
+  .laura-img {
+    width: 170px;
+  }
   .contact-grid {
     grid-template-columns: 420px 1fr;
   }
@@ -258,20 +266,36 @@ footer {
     display: block;
   }
   .page-name {
-    font-size: 30px;
+    font-size: 28px;
   }
   .menu {
     transition: none;
-    margin: 35px 180px 0px 220px;
+    margin: 50px 170px 0px 250px;
     left: 0;
+    gap: 3rem;
   }
 
   .mobile-icon {
     display: none;
   }
+  a:hover {
+    color: #78b8ec;
+  }
 }
 /* ---------min-width 1040--------- */
 @media (min-width: 1040px) {
+  body {
+    /*  margin: 60px; */
+  }
+  .menu {
+    margin: 60px 240px 0px 300px;
+    left: 0;
+    gap: 3rem;
+  }
+
+  .page-name {
+    font-size: 32px;
+  }
 }
 
 /* ---------max 478/min 320--------- */
@@ -283,24 +307,52 @@ footer {
     width: 70px;
   }
   .menu {
-    margin: 0px 90px 0px 70px;
-    gap: 0.5rem;
+    margin: 0px 100px 0px 70px;
+    gap: 0.25rem;
   }
   .mobile-icon {
-    left: 9px;
-    top: 1.8rem;
+    left: 14px;
   }
 
   .menu-line {
-    width: 45px;
-    height: 5px;
+    width: 42px;
+    height: 4.5px;
     margin-left: 8px;
   }
   .page-name {
     font-size: 17px;
   }
+
+  .title-portfolio {
+    margin-bottom: 5px;
+    font-size: 36px;
+  }
+  .title-name {
+    margin-top: 5px;
+    font-size: 26px;
+  }
+
+  .info {
+    margin: 0px 18px;
+  }
+  .info-welcome {
+    margin: 5px;
+  }
+
   .welcome h3 {
-    margin-top: 15px;
+    font-size: 23px;
+    margin-top: 5px;
+  }
+  .welcome-text {
+    font-size: 24px;
+  }
+  .logo-img {
+    width: 70px;
+  }
+
+  .laura-img {
+    width: 80px;
+    margin-left: 20px;
   }
   .contact-grid {
     display: block;
@@ -308,5 +360,6 @@ footer {
 
   .img-linkedin {
     margin-left: 10px;
+    width: 60px;
   }
 }
