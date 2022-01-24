@@ -12,16 +12,16 @@
 
     <title>Laura's Portfolio</title>
 
-    <!--  <style>
-        .logo {
-            border: 0.5px solid blue;
+    <style>
+        aside {
+            font-style: italic;
+
         }
 
-        .title,
-        h1 {
-            border: 0.5px solid white;
+        #cont {
+            display: none;
         }
-    </style> -->
+    </style>
 </head>
 <!--Body Starts-->
 <body>
@@ -53,8 +53,13 @@
         </div>
     </header>
     <!-- TEMP NOTE (DELETE) -->
-    <p style="font-size:24px; text-align: center; color:rgb(218, 121, 137);">** Building in progress! **<br>
-        <span style="font-size:14px; text-align: center; color:rgb(218, 121, 137);">Please excuse the mess <span style="font-size:22px">👩‍💻</span></span></p>
+    <p class="aside-note" style="font-size:24px; text-align: center; color:rgb(218, 121, 137);">** Building in progress! **<br>
+        <span style="font-size:14px; text-align: center; color:rgb(218, 121, 137);">Please excuse the mess <span style="font-size:22px">👩‍💻</span>
+            <aside>
+                <p>This page is a work-in-progress.<span id="dots">...</span><span id="cont"> I am still making lots of changes as I'm continuing to learn. So, there's not much here yet, but I'm working on getting more stuff added, hopefully, soon! .</span></p>
+                <button onclick="myFunction()" id="moreBtn">Read more</button>
+            </aside>
+        </span></p>
     <!-- Temp Note End-->
     <div class="info">
         <!-- welcome -->
@@ -70,6 +75,7 @@
                 <img src="assets/img/laura-img.jpg" alt="" class="laura-img">
             </div>
         </div>
+
 
         <!-- about -->
         <div class="about">
@@ -90,6 +96,7 @@
 
                     <img src="assets/img/laura-img.jpg" alt="" class="laura-img">
                 </div>
+
 
             </div>
             <!-- contact -->
@@ -128,6 +135,22 @@
 
         function mobileMenu() {
             menu.classList.toggle('active');
+        };
+
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var readMore = document.getElementById("cont");
+            var btnText = document.getElementById("moreBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                readMore.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                readMore.style.display = "inline";
+            }
         }
     </script> <!-- JS Ends -->
 
