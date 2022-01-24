@@ -135,6 +135,10 @@ p {
 .email-address:hover {
   color: #a0a5ec;
 }
+a {
+  color: #78b8ec;
+  text-decoration: none;
+}
 
 /* ----------NAVIGATION ---------- */
 
@@ -190,9 +194,6 @@ p {
   text-decoration: none;
   color: #c8d7ef;
   font-weight: 500;
-}
-a {
-  color: #78b8ec;
 }
 
 /* ---- FOOTER ---- */
@@ -362,10 +363,33 @@ footer {
     width: 60px;
   }
 }
-/* --------------- Skills Page --------------- */
+/* --------------- Sub-pages --------------- */
 .sub-page-info {
   margin: 0px 30px;
 }
+
+.linked-title:hover {
+  text-decoration: underline;
+  color: #a0a5ec;
+}
+
+/* --------------- Main Project Page --------------- */
+.project-names {
+  font-size: 26px;
+  list-style: none;
+  margin-left: 30px;
+}
+
+/* --------------- Projects Page --------------- */
+.converter {
+  display: grid;
+  grid-template-columns: 200px 120px;
+  margin: 50px;
+  text-align: center;
+}
+
+/* --------------- Skills Page --------------- */
+
 .skills-list {
   list-style: none;
   line-height: 200%;
