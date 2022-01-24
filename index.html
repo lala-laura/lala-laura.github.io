@@ -13,13 +13,39 @@
     <title>Laura's Portfolio</title>
 
     <style>
-        aside {
+        #cont {
             font-style: italic;
+            font-size: 16px;
+            text-align: center;
+            color: #FFFFFF;
+            display: none;
 
         }
 
-        #cont {
-            display: none;
+        .in-progress {
+            margin: 0px 35px;
+        }
+
+        @media (max-width: 478px) and (min-width: 320px) {
+            .in-progress {
+                margin: 0px 8px;
+            }
+
+            #cont {
+                font-size: 15px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .in-progress {
+                margin: 0px 140px;
+            }
+        }
+
+        @media (min-width: 1040px) {
+            .in-progress {
+                margin: 0px 280px;
+            }
         }
     </style>
 </head>
@@ -53,13 +79,17 @@
         </div>
     </header>
     <!-- TEMP NOTE (DELETE) -->
-    <p class="aside-note" style="font-size:24px; text-align: center; color:rgb(218, 121, 137);">** Building in progress! **<br>
-        <span style="font-size:14px; text-align: center; color:rgb(218, 121, 137);">Please excuse the mess <span style="font-size:22px">👩‍💻</span>
-            <aside>
-                <p>This page is a work-in-progress.<span id="dots">...</span><span id="cont"> I am still making lots of changes as I'm continuing to learn. So, there's not much here yet, but I'm working on getting more stuff added, hopefully, soon! .</span></p>
-                <button onclick="myFunction()" id="moreBtn">Read more</button>
-            </aside>
-        </span></p>
+    <div class="in-progress" style="font-size:24px; text-align: center; color:rgb(218, 121, 137);">Building in progress
+        <span id="dots">...</span>
+        <span id="cont"><br>
+
+            This page is still a work-in-progress. I am still making lots of changes as I'm continuing to learn. So, there's not much here yet, but I'm working on getting more stuff added, hopefully, soon!
+        </span><br>
+        <button onclick="myFunction()" id="moreBtn">Read more</button>
+        <br>
+        <span style="font-size:14px; text-align: center; color:rgb(218, 121, 137);">Please excuse the mess <span style="font-size:22px">👩‍💻</span> </span></div>
+
+
     <!-- Temp Note End-->
     <div class="info">
         <!-- welcome -->
