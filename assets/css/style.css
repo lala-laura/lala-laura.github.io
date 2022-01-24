@@ -400,7 +400,10 @@ footer {
   display: block;
   text-align: left;
 }
-
+.sub-list {
+  font-size: 20px;
+  color: #b8c2eb;
+}
 /* -------------SKILLS @media------------- */
 /* ---------min-width 768--------- */
 @media (min-width: 768px) {
