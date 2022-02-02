@@ -25,15 +25,14 @@ h6 {
 h1 {
   font-size: 44px;
   color: #fff;
-  text-decoration: underline solid #78b8ec 1.5px;
+  text-decoration: underline solid #78b8ec 1px;
 }
 h2 {
   font-size: 34px;
-  text-decoration: underline solid #78b8ec 1.5px;
+  text-decoration: underline solid #78b8ec 1px;
   color: #fff;
 }
 h3 {
-  text-align: center;
   font-size: 30px;
   color: #bad9f2;
 }
@@ -136,6 +135,10 @@ p {
 .email-address:hover {
   color: #a0a5ec;
 }
+a {
+  color: #78b8ec;
+  text-decoration: none;
+}
 
 /* ----------NAVIGATION ---------- */
 
@@ -192,9 +195,6 @@ p {
   color: #c8d7ef;
   font-weight: 500;
 }
-a {
-  color: #78b8ec;
-}
 
 /* ---- FOOTER ---- */
 footer {
@@ -204,7 +204,7 @@ footer {
   color: #bad9f2;
 }
 
-/* -------------@media------------- */
+/* -------------HOME @media------------- */
 /* ---------min-width 768--------- */
 @media (min-width: 768px) {
   body {
@@ -361,5 +361,54 @@ footer {
   .img-linkedin {
     margin-left: 10px;
     width: 60px;
+  }
+}
+/* --------------- Sub-pages --------------- */
+.sub-page-info {
+  margin: 0px 30px;
+}
+
+.linked-title:hover {
+  text-decoration: underline;
+  color: #a0a5ec;
+}
+
+/* --------------- Main Project Page --------------- */
+.project-names {
+  font-size: 26px;
+  list-style: none;
+  margin-left: 30px;
+}
+
+/* --------------- Projects Page --------------- */
+.converter {
+  display: grid;
+  grid-template-columns: 200px 120px;
+  margin: 50px;
+  text-align: center;
+}
+
+/* --------------- Skills Page --------------- */
+
+.skills-list {
+  list-style: none;
+  line-height: 200%;
+  font-size: 24px;
+}
+
+.skills-list li {
+  display: block;
+  text-align: left;
+}
+.sub-list {
+  font-size: 20px;
+  color: #b8c2eb;
+}
+/* -------------SKILLS @media------------- */
+/* ---------min-width 768--------- */
+@media (min-width: 768px) {
+  .skills-list {
+    text-align: left;
+    text-indent: 10%;
   }
 }
