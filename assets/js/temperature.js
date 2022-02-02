@@ -1,10 +1,10 @@
 let fahrenheitNum = document.getElementById('fahrenheit');
-//let result = Math.floor(fahrenheitNum);
+
 let celsiusNum = document.getElementById('celsius');
+
 //let result = Math.floor(celsiusNum);
 
 let converter = document.getElementsByClassName('temp');
-// console.log(converter)
 
 for (let i = 0; i < converter.length; i++) {
   let temp = converter[i];
@@ -14,11 +14,11 @@ for (let i = 0; i < converter.length; i++) {
 
     switch (e.target.name) {
       case 'fahrenheit':
-        celsiusNum.value = (value - 32) / 1.8;
+        celsiusNum.value = Math.floor((value - 32) / 1.8);
 
         break;
       case 'celsius':
-        fahrenheitNum.value = value * 1.8 + 32;
+        fahrenheitNum.value = Math.floor(value * 1.8 + 32);
 
         break;
     }
