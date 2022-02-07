@@ -11,36 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&family=Raleway:wght@200;300;400;500;700&display=swap" rel="stylesheet">
     <style>
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
-        }
 
-        .blog-side-bar {
-            grid-area: 1 / 1 / 4 / 2;
-
-        }
-
-        .blog-body {
-            grid-area: 1 / 2 / 4 / 4;
-            margin: 10px;
-
-        }
-
-        .blog-updates {
-            margin: 60px 0px 0px 0px;
-
-        }
-
-        .update-list li {
-            margin: 20px 10px 0px 0px;
-            font-size: 20px;
-            font-weight: bolder;
-
-        }
     </style>
 
     <title>Laura's Portfolio - Blog</title>
@@ -70,20 +41,27 @@
             </div>
         </section>
 
-
     </header>
-
-
 
     <div class="blog-grid">
 
         <div class="blog-side-bar">
             <h4 class="blog-updates">Updates!</h4>
             <ul class="update-list">
-                <li class="top-update">Update #1</li>
-                <span>Just some text</span>
-                <li class="past-updates">Update #2</li>
-                <li class="past-updates">Update #3</li>
+                <li class="newest-update">February 7, 2022</li>
+                <span>First Blog Post!</span>
+
+                <span id="less">...</span>
+                <span id="more">
+
+                    <li class="past-updates">Update #2</li>
+                    <span>Just some text</span>
+                    <li class="past-updates">Update #3</li>
+                    <span>Just some text</span>
+                </span>
+
+                <span onclick="myFunction()" id="toggle">Read more</span>
+
             </ul>
         </div>
 
@@ -91,20 +69,40 @@
             <h3 class="blog-title"> February 7, 2022
             </h3>
             <h5 class="blog-sub-title">Hello World!</h5>
-            <p class="blog-text">This is some text</p>
+            <div class="blog-text">
+                <p>Hi, I’m Laura and welcome to my website! As you can see, I am nowhere near being complete, or even have much to show. But I wanted to start putting something together that, at least, reflects the progress I am making and also the progress I will continue to make. </p>
+                <p>I’m working of a few different projects and thinking of other prospective projects to add in the near future. I’m juggling this site with ongoing learning and a full-time job, so I’m not going to be one of those stories you’ll see on the testimonial pages of coding bootcamp sites where you’ll read all about the people that get their dream jobs in six months. I started learning this stuff about six months ago so, yeah...not happening.</p>
+                <p>Anyway, I’m working to put together a (hopefully) great site and continue this journey. Thanks for stopping by!</p>
+
+            </div>
+
         </div>
-    </div>
 
+        <!-- ---- FOOTER ---- -->
+        <footer> &copy;<script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script> Website Hand Coded by Laura Cornell-d'Echert
+        </footer>
 
-    <!-- ---- FOOTER ---- -->
-    <footer> &copy;<script type="text/javascript">
-            document.write(new Date().getFullYear());
-        </script> Website Hand Coded by Laura Cornell-d'Echert
-    </footer>
+        <script>
+            function myFunction() {
+                let less = document.getElementById('less');
+                let more = document.getElementById('more');
+                let toggle = document.getElementById('toggle');
 
+                if (less.style.display === 'none') {
+                    less.style.display = 'inline';
+                    toggle.innerHTML = 'Show More';
+                    more.style.display = 'none';
+                } else {
+                    less.style.display = 'none';
+                    toggle.innerHTML = 'Show Less';
+                    more.style.display = 'inline';
+                }
+            }
+        </script>
 
-
-    <script src="../assets/js/navigation.js"> </script>
+        <script src="../assets/js/navigation.js"> </script>
 
 </body>
 </html>

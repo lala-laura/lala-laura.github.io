@@ -413,6 +413,66 @@ footer {
   }
 }
 /* ------------- BLOG ------------- */
-.update-list {
+
+.blog-updates {
+  margin: 50px 0px 0px 0px;
+}
+.update-list li {
   list-style: none;
+  margin: 20px 5px 5px 0px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.update-list {
+  padding-left: 20px;
+}
+
+.blog-grid {
+  margin: 0px 12px;
+  /*  background-color: rgb(20, 20, 99);
+            /* testing only*/
+}
+
+#toggle {
+  color: #f3b1dd;
+  font-weight: 500;
+}
+
+#toggle:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#more {
+  display: none;
+}
+
+/* -------------BLOG @media------------- */
+/* ---------min-width 768--------- */
+@media (min-width: 768px) {
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .blog-side-bar {
+    grid-area: 1 / 1 / 4 / 2;
+    background-color: rgb(3, 40, 75);
+    /* testing only*/
+  }
+
+  .blog-body {
+    grid-area: 1 / 2 / 4 / 4;
+    margin: 8px;
+    background-color: rgb(19, 19, 53);
+    /* testing only*/
+  }
+
+  .blog-updates {
+    margin: 42px 0px 0px 25px;
+  }
 }
