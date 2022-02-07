@@ -412,3 +412,7 @@ footer {
     text-indent: 10%;
   }
 }
+/* ------------- BLOG ------------- */
+.update-list {
+  list-style: none;
+}
