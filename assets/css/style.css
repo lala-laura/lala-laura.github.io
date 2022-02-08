@@ -442,6 +442,7 @@ footer {
 
 .blog-title {
   font-size: 32px;
+  color: #bad9f2;
 }
 
 /* -------------BLOG @media------------- */
@@ -449,15 +450,16 @@ footer {
 @media (min-width: 768px) {
   .blog-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    margin-top: 24px;
   }
 
   .blog-body {
-    grid-area: 1 / 2 / 4 / 4;
-    margin: 8px;
+    grid-area: 1 / 2 / 4 / 5;
+    margin: 20px 0px;
   }
 
   .blog-side-bar {
@@ -478,18 +480,30 @@ footer {
     font-size: 24px;
     margin-top: 30px;
     margin: 20px 0px 0px 10px;
+    text-decoration: underline;
+    color: #bad9f2;
   }
   .update-list li {
     list-style: none;
-    margin: 20px 5px 5px 0px;
-    font-size: 20px;
+    margin: 10px 5px 5px 0px;
+    font-size: 17px;
     font-weight: bolder;
   }
 
   .update-list {
     padding-left: 10px;
   }
-  .date-blog {
-    font-size: 24px;
+  .blog-date {
+    font-size: 16px;
   }
 }
+/* -------------BLOG @media------------- */
+/* ---------min-width 1200--------- */
+@media (min-width: 1200px) {
+  .blog-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .blog-body {
+    grid-area: 1 / 2 / 4 /6;
+  }
+} */
