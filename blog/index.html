@@ -46,29 +46,27 @@
     <div class="blog-grid">
 
         <div class="blog-side-bar">
-            <h4 class="blog-updates">Updates!</h4>
+            <div class="blog-updates">Updates!</div>
             <ul class="update-list">
-                <li class="newest-update">February 7, 2022</li>
+                <li class="date-blog">February 7, 2022</li>
                 <span>First Blog Post!</span>
 
-                <span id="less">...</span>
-                <span id="more">
-
+                <!--    <span class="more">
                     <li class="past-updates">Update #2</li>
                     <span>Just some text</span>
                     <li class="past-updates">Update #3</li>
                     <span>Just some text</span>
-                </span>
-
-                <span onclick="myFunction()" id="toggle">Read more</span>
-
+                </span> -->
+                <!--     <div id="toggle-rules">
+                    <span class="toggle" id="toggle-updates">Show More</span>         </div> -->
             </ul>
         </div>
 
+
         <div class="blog-body">
-            <h3 class="blog-title"> February 7, 2022
-            </h3>
-            <h5 class="blog-sub-title">Hello World!</h5>
+            <div class="blog-date" id="feb-7-22"> February 7, 2022
+            </div>
+            <div class="blog-title">Hello World!</div>
             <div class="blog-text">
                 <p>Hi, I’m Laura and welcome to my website! As you can see, I am nowhere near being complete, or even have much to show. But I wanted to start putting something together that, at least, reflects the progress I am making and also the progress I will continue to make. </p>
                 <p>I’m working of a few different projects and thinking of other prospective projects to add in the near future. I’m juggling this site with ongoing learning and a full-time job, so I’m not going to be one of those stories you’ll see on the testimonial pages of coding bootcamp sites where you’ll read all about the people that get their dream jobs in six months. I started learning this stuff about six months ago so, yeah...not happening.</p>
@@ -77,32 +75,16 @@
             </div>
 
         </div>
+    </div>
+    <!-- ---- FOOTER ---- -->
+    <footer> &copy;<script type="text/javascript">
+            document.write(new Date().getFullYear());
+        </script> Website Hand Coded by Laura Cornell-d'Echert
+    </footer>
 
-        <!-- ---- FOOTER ---- -->
-        <footer> &copy;<script type="text/javascript">
-                document.write(new Date().getFullYear());
-            </script> Website Hand Coded by Laura Cornell-d'Echert
-        </footer>
 
-        <script>
-            function myFunction() {
-                let less = document.getElementById('less');
-                let more = document.getElementById('more');
-                let toggle = document.getElementById('toggle');
 
-                if (less.style.display === 'none') {
-                    less.style.display = 'inline';
-                    toggle.innerHTML = 'Show More';
-                    more.style.display = 'none';
-                } else {
-                    less.style.display = 'none';
-                    toggle.innerHTML = 'Show Less';
-                    more.style.display = 'inline';
-                }
-            }
-        </script>
-
-        <script src="../assets/js/navigation.js"> </script>
+    <script src="../assets/js/navigation.js"> </script>
 
 </body>
 </html>
