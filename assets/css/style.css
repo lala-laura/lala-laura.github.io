@@ -130,7 +130,7 @@ grid-template-columns: repeat(3, 1fr);
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+
 }
 /* --------LOGO -------- */
 .logo {
@@ -252,18 +252,30 @@ footer {
 
   .about-grid {
     display: grid;
-    grid-template-columns: 1fr 210px;
+grid-template-columns: repeat(4, 1fr);
+  }
+
+  .about-text {
+    grid-area: 1/1/2/4;
   }
   .about-img {
     display: block;
-    margin: 0px;
-    margin: 60px 0px 0px 30px;
+    margin: 60px 0px 0px 40px;
+    grid-area: 1/4/2/5;
   }
   .laura-img {
     width: 170px;
   }
   .contact-grid {
-    grid-template-columns: 420px 1fr;
+    grid-template-columns: repeat(3, 1fr)
+  }
+
+  .contact-email{
+     grid-area: 1/1/2/3;
+  }
+
+  .contact-img {
+     grid-area: 1/3/2/4;
   }
   .img-linkedin {
     margin: 0px;
@@ -307,6 +319,33 @@ footer {
 
   .page-name {
     font-size: 32px;
+  }
+
+
+  .about-grid {
+    display: grid;
+grid-template-columns: repeat(5, 1fr);
+  }
+
+  .about-text {
+    grid-area: 1/1/2/5;
+  }
+  .about-img {
+    display: block;
+    margin-top: 50px;
+    grid-area: 1/5/2/6;
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr)
+  }
+
+  .contact-email{
+     grid-area: 1/1/2/2;
+  }
+
+  .contact-img {
+     grid-area: 1/2/2/3;
   }
 }
 
