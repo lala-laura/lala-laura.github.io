@@ -37,12 +37,12 @@
   font-size: 24px;
   text-align: center;
   color: #f3b1dd;
-  margin: 0px 35px;
+  margin: 0px 35px 30px 35px;
 }
 
 @media (max-width: 478px) and (min-width: 320px) {
   .in-progress {
-    margin: 0px 8px;
+    margin: 15px 8px;
   }
 
   #cont {
