@@ -450,11 +450,49 @@ grid-template-columns: repeat(5, 1fr);
 }
 
 /* --------------- Projects Page --------------- */
-.converter {
+.converter-temp {
+ font-size: 24px;
+ font-weight: 400;
+ text-align: center;
+ margin: 60px;
+}
+.converter-grid{
   display: grid;
-  grid-template-columns: 200px 120px;
-  margin: 50px;
+  grid-template-columns: repeat(2, 1fr);
   text-align: center;
+align-content: center
+
+}
+
+.degree-c {
+  grid-area: ;1/1/2/2;
+}
+.degree-f{
+  grid-area: ; 2/1/3/2;
+}
+
+#fahrenheit {
+    grid-area: ; 2/2/3/3;
+}
+#celsius {
+    grid-area: ; 1/2/2/3;
+}
+
+/*.degree-k{
+  grid-area: ; 3/1/4/3
+}
+.degree-n{
+  grid-area: ; 4/1/5/3
+} */
+
+/* --------------- Projects Page --------------- */
+/* ---------max 412/min 320--------- */
+@media only screen
+  and  (max-width: 412px)
+  and (min-width: 320px) {
+.converter-temp {
+
+}
 }
 
 /* --------------- Skills Page --------------- */
