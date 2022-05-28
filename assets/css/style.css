@@ -492,8 +492,7 @@ align-content: center
 /* -----Graphics Page----- */
 
  .my-graphics{
- text-align: left;
-margin-left: 20px;
+ margin-left: 20px;
 
   }
 
@@ -530,12 +529,23 @@ text-align: left;
 .logo-caption-2{
     grid-area: 2/2/3/3;
 }
+.bcam-ribbon{
+width: 65%;
 
+}
+
+
+
+/*min-width 768*/
 @media (min-width: 768px) {
 
 .logo-position{
    max-width: 285px;
    min-width: 250px;
+}
+
+.bcam-ribbon{
+max-width: 40%;
 }
 /* --------------- Projects Page --------------- */
 /* ---------max 412/min 320--------- */
