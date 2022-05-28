@@ -421,6 +421,7 @@ grid-template-columns: repeat(5, 1fr);
 /* --------------- Sub-pages --------------- */
 .sub-page-info {
   margin: 0px 30px;
+
 }
 
 .linked-title:hover {
@@ -485,6 +486,9 @@ align-content: center
   grid-area: ; 4/1/5/3
 } */
 
+.sub-page-info-p{
+  text-align:justify;
+}
 /* -----Graphics Page----- */
 
  .my-graphics{
