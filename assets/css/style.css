@@ -534,8 +534,6 @@ width: 65%;
 
 }
 
-
-
 /*min-width 768*/
 @media (min-width: 768px) {
 
@@ -547,6 +545,7 @@ width: 65%;
 .bcam-ribbon{
 max-width: 40%;
 }
+}
 /* --------------- Projects Page --------------- */
 /* ---------max 412/min 320--------- */
 @media only screen
@@ -555,15 +554,13 @@ max-width: 40%;
 .converter-temp {
 
 }
-
-
 }
 
 /* --------------- Skills Page --------------- */
 
 .skills-list {
   list-style: none;
-  line-height: 200%;
+  line-height: 180%;
   font-size: 24px;
 }
 
@@ -580,13 +577,21 @@ max-width: 40%;
 @media (min-width: 768px) {
   .skills-list {
     text-align: left;
-    text-indent: 10%;
+
   }
 }
 /* ------------- BLOG ------------- */
 .blog-side-bar {
   display: none;
 }
+
+/*.blog-updates {
+    font-size: 36px;
+    margin-top: 30px;
+    margin: 20px 0px 0px 10px;
+    text-decoration: underline;
+    color: #bad9f2;
+  } */
 
 .blog-grid {
   display: block;
@@ -677,4 +682,4 @@ max-width: 40%;
   .blog-body {
     grid-area: 1 / 2 / 4 /6;
   }
-} */
+}
