@@ -421,6 +421,7 @@ grid-template-columns: repeat(5, 1fr);
 /* --------------- Sub-pages --------------- */
 .sub-page-info {
   margin: 0px 30px;
+
 }
 
 .linked-title:hover {
@@ -485,6 +486,67 @@ align-content: center
   grid-area: ; 4/1/5/3
 } */
 
+.sub-page-info-p{
+  text-align:justify;
+}
+/* -----Graphics Page----- */
+
+ .my-graphics{
+ margin-left: 20px;
+
+  }
+
+.graphics-logo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ /* justify-content:space-around; */
+  gap: 0.5rem;
+
+margin:5px;
+}
+
+.logo-1 {
+    grid-area: 1/1/2/2;
+}
+.logo-2{
+  grid-area: 1/2/2/3;
+}
+
+.logo-position{
+   width: 75%;
+}
+
+figcaption{
+margin-top: 8px;
+font-style: italic;
+text-align: left;
+}
+
+.logo-caption-1{
+  grid-area: 2/1/3/2;
+}
+
+.logo-caption-2{
+    grid-area: 2/2/3/3;
+}
+.bcam-ribbon{
+width: 65%;
+
+}
+
+
+
+/*min-width 768*/
+@media (min-width: 768px) {
+
+.logo-position{
+   max-width: 285px;
+   min-width: 250px;
+}
+
+.bcam-ribbon{
+max-width: 40%;
+}
 /* --------------- Projects Page --------------- */
 /* ---------max 412/min 320--------- */
 @media only screen
@@ -493,6 +555,8 @@ align-content: center
 .converter-temp {
 
 }
+
+
 }
 
 /* --------------- Skills Page --------------- */
