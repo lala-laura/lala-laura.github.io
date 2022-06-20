@@ -354,7 +354,7 @@ grid-template-columns: repeat(5, 1fr);
 }
 
 /* ---------max 412/min 320--------- */
-@media (max-width: 454px) and (min-width: 320px) {
+@media (max-width: 425px) and (min-width: 320px) {
   body {
     margin: 14px;
   }
