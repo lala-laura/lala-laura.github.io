@@ -353,8 +353,8 @@ grid-template-columns: repeat(5, 1fr);
   }
 }
 
-/* ---------max 412/min 320--------- */
-@media (max-width: 425px) and (min-width: 320px) {
+/* ---------max 410/min 320--------- */
+@media (max-width: 410px) and (min-width: 320px) {
   body {
     margin: 14px;
   }
@@ -557,14 +557,14 @@ max-width: 40%;
 }
 }
 /* --------------- Projects Page --------------- */
-/* ---------max 412/min 320--------- */
+/* ---------max 410/min 320---------
 @media only screen
-  and  (max-width: 412px)
+  and  (max-width: 410px)
   and (min-width: 320px) {
 .converter-temp {
 
 }
-}
+} */
 
 /* --------------- Skills Page --------------- */
 
