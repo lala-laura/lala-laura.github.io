@@ -25,7 +25,7 @@ h6 {
 h1 {
   font-size: 44px;
   color: #fff;
-  text-decoration: underline solid #78b8ec 1px;
+ /* text-decoration: underline solid #78b8ec 1px; */
 }
 h2 {
   font-size: 34px;
@@ -135,6 +135,7 @@ grid-template-columns: repeat(3, 1fr);
 /* --------LOGO -------- */
 .logo {
   text-align: right;
+
 }
 .logo-img {
   width: 95px;
@@ -165,13 +166,13 @@ a {
 .menu {
   display: flex;
   position: absolute;
-  justify-content: space-between;
+  justify-content: space-around;
   left: 100%;
   right: 0;
   top: 1.5rem;
   flex-direction: row;
   text-align: center;
-  margin: 20px 160px 0px 120px;
+  margin: 15px 140px 0px 90px;
   gap: 0.5rem;
   padding: 0px;
   overflow: hidden;
@@ -187,9 +188,9 @@ a {
 
 .menu-line {
   display: block;
-  width: 55px;
-  height: 6px;
-  margin: 0px 0px 10px 12px;
+  width: 40px;
+  height: 5.5px;
+  margin: 0px 0px 8px 8px;
   background-color: #fff;
   border-radius: 13px;
 }
@@ -299,9 +300,11 @@ grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
   }
 
+
   .mobile-icon {
     display: none;
   }
+
   a:hover {
     color: #78b8ec;
   }
@@ -315,6 +318,7 @@ grid-template-columns: repeat(4, 1fr);
     margin: 60px 240px 0px 300px;
     left: 0;
     gap: 3rem;
+
   }
 
   .page-name {
@@ -350,7 +354,7 @@ grid-template-columns: repeat(5, 1fr);
 }
 
 /* ---------max 412/min 320--------- */
-@media (max-width: 412px) and (min-width: 320px) {
+@media (max-width: 425px) and (min-width: 320px) {
   body {
     margin: 14px;
   }
@@ -358,20 +362,26 @@ grid-template-columns: repeat(5, 1fr);
     width: 70px;
   }
   .menu {
-    margin: 16px 100px 0px 70px;
+    margin: 15px 100px 0px 70px;
     gap: 0.25rem;
+      top: .5rem;
+
   }
   .mobile-icon {
     left: 16px;
+      top: 2rem;
   }
 
   .menu-line {
-    width: 42px;
+    width: 35px;
     height: 4.5px;
     margin-left: 8px;
+     margin: 0px 0px 8px 8px;
+
+
   }
   .page-name {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   .title-portfolio {
