@@ -25,7 +25,7 @@ h6 {
 h1 {
   font-size: 44px;
   color: #fff;
- /* text-decoration: underline solid #78b8ec 1px; */
+  /* text-decoration: underline solid #78b8ec 1px; */
 }
 h2 {
   font-size: 34px;
@@ -85,23 +85,23 @@ p {
 }
 .info-welcome {
   display: grid;
-grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin: 10px 0px 0px 10px;
 }
 
 .welcome {
-  grid-area: 1/1/2/3
+  grid-area: 1/1/2/3;
 }
 
 .welcome-img {
-  grid-area: 1/3/2/4
+  grid-area: 1/3/2/4;
 }
 
 .welcome-text {
   color: #ffffff;
   margin: 40px 20px 10px 0px;
   text-align: center;
-/*  display: inline-flex; */
+  /*  display: inline-flex; */
   text-transform: uppercase;
   font-size: 26px;
 }
@@ -130,12 +130,10 @@ grid-template-columns: repeat(3, 1fr);
 
 .contact-grid {
   display: grid;
-
 }
 /* --------LOGO -------- */
 .logo {
   text-align: right;
-
 }
 .logo-img {
   width: 95px;
@@ -237,15 +235,14 @@ footer {
   }
   .info-welcome {
     display: block;
-
   }
 
   .welcome {
     margin: 0px 0px;
   }
-  .welcome-text  {
-  font-size: 36px;
-}
+  .welcome-text {
+    font-size: 36px;
+  }
 
   .welcome-img-mobile {
     display: none;
@@ -253,7 +250,7 @@ footer {
 
   .about-grid {
     display: grid;
-grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .about-text {
@@ -268,15 +265,15 @@ grid-template-columns: repeat(4, 1fr);
     width: 170px;
   }
   .contact-grid {
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .contact-email{
-     grid-area: 1/1/2/3;
+  .contact-email {
+    grid-area: 1/1/2/3;
   }
 
   .contact-img {
-     grid-area: 1/3/2/4;
+    grid-area: 1/3/2/4;
   }
   .img-linkedin {
     margin: 0px;
@@ -300,7 +297,6 @@ grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
   }
 
-
   .mobile-icon {
     display: none;
   }
@@ -318,17 +314,15 @@ grid-template-columns: repeat(4, 1fr);
     margin: 60px 240px 0px 300px;
     left: 0;
     gap: 3rem;
-
   }
 
   .page-name {
     font-size: 32px;
   }
 
-
   .about-grid {
     display: grid;
-grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 
   .about-text {
@@ -341,15 +335,15 @@ grid-template-columns: repeat(5, 1fr);
   }
 
   .contact-grid {
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .contact-email{
-     grid-area: 1/1/2/2;
+  .contact-email {
+    grid-area: 1/1/2/2;
   }
 
   .contact-img {
-     grid-area: 1/2/2/3;
+    grid-area: 1/2/2/3;
   }
 }
 
@@ -364,21 +358,18 @@ grid-template-columns: repeat(5, 1fr);
   .menu {
     margin: 15px 100px 0px 70px;
     gap: 0.25rem;
-      top: .5rem;
-
+    top: 0.5rem;
   }
   .mobile-icon {
     left: 16px;
-      top: 2rem;
+    top: 2rem;
   }
 
   .menu-line {
     width: 35px;
     height: 4.5px;
     margin-left: 8px;
-     margin: 0px 0px 8px 8px;
-
-
+    margin: 0px 0px 8px 8px;
   }
   .page-name {
     font-size: 18px;
@@ -431,7 +422,6 @@ grid-template-columns: repeat(5, 1fr);
 /* --------------- Sub-pages --------------- */
 .sub-page-info {
   margin: 0px 30px;
-
 }
 
 .linked-title:hover {
@@ -454,41 +444,48 @@ grid-template-columns: repeat(5, 1fr);
 /* --------------- Main Project Page --------------- */
 /* ---------min-width 768--------- */
 @media (min-width: 768px) {
-.project-names {
-  font-size: 26px;
-   text-align: left;
-}
+  .project-names {
+    font-size: 26px;
+    text-align: left;
+  }
 }
 
 /* --------------- Projects Page --------------- */
 .converter-temp {
- font-size: 24px;
- font-weight: 400;
- text-align: center;
- margin: 60px;
-}
-.converter-grid{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  font-size: 24px;
+  font-weight: 400;
   text-align: center;
-align-content: center
 
+  margin: 0px 10px;
+}
+.converter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  align-content: center;
 }
 
-.degree-c {
-  grid-area: ;1/1/2/2;
+.temp {
+  width: 50px;
 }
-.degree-f{
-  grid-area: ; 2/1/3/2;
+#degree-c {
+  grid-area: 1/2/2/3;
 }
-
-#fahrenheit {
-    grid-area: ; 2/2/3/3;
+#degree-f {
+  grid-area: 2/2/3/3;
 }
 #celsius {
-    grid-area: ; 1/2/2/3;
+  grid-area: 1/3/2/4;
+}
+#fahrenheit {
+  grid-area: 2/3/3/4;
 }
 
+.temp-name {
+  padding: 2px 20px;
+  background-color: rgb(31, 31, 126);
+  border: 1.5px solid rgb(77, 77, 155, 0.8);
+}
 /*.degree-k{
   grid-area: ; 3/1/4/3
 }
@@ -496,75 +493,76 @@ align-content: center
   grid-area: ; 4/1/5/3
 } */
 
-.sub-page-info-p{
-  text-align:justify;
+.sub-page-info-p {
+  text-align: justify;
 }
 /* -----Graphics Page----- */
 
- .my-graphics{
- margin-left: 20px;
-
-  }
+.my-graphics {
+  margin-left: 20px;
+}
 
 .graphics-logo {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
- /* justify-content:space-around; */
+  /* justify-content:space-around; */
   gap: 0.5rem;
 
-margin:5px;
+  margin: 5px;
 }
 
 .logo-1 {
-    grid-area: 1/1/2/2;
+  grid-area: 1/1/2/2;
 }
-.logo-2{
+.logo-2 {
   grid-area: 1/2/2/3;
 }
 
-.logo-position{
-   width: 75%;
+.logo-position {
+  width: 75%;
 }
 
-figcaption{
-margin-top: 8px;
-font-style: italic;
-text-align: left;
+figcaption {
+  margin-top: 8px;
+  font-style: italic;
+  text-align: left;
 }
 
-.logo-caption-1{
+.logo-caption-1 {
   grid-area: 2/1/3/2;
 }
 
-.logo-caption-2{
-    grid-area: 2/2/3/3;
+.logo-caption-2 {
+  grid-area: 2/2/3/3;
 }
-.bcam-ribbon{
-width: 65%;
-
+.bcam-ribbon {
+  width: 65%;
 }
 
 /*min-width 768*/
 @media (min-width: 768px) {
+  .converter-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0px 150px;
+  }
 
-.logo-position{
-   max-width: 285px;
-   min-width: 250px;
-}
+  .logo-position {
+    max-width: 285px;
+    min-width: 250px;
+  }
 
-.bcam-ribbon{
-max-width: 40%;
-}
+  .bcam-ribbon {
+    max-width: 40%;
+  }
 }
 /* --------------- Projects Page --------------- */
-/* ---------max 410/min 320---------
-@media only screen
-  and  (max-width: 410px)
-  and (min-width: 320px) {
-.converter-temp {
-
+/* ---------max 410/min 320---------*/
+@media only screen and (max-width: 410px) and (min-width: 320px) {
+  .converter-temp {
+    /* margin: 0px; */
+  }
 }
-} */
 
 /* --------------- Skills Page --------------- */
 
@@ -587,7 +585,6 @@ max-width: 40%;
 @media (min-width: 768px) {
   .skills-list {
     text-align: left;
-
   }
 }
 /* ------------- BLOG ------------- */
