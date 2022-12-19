@@ -1,0 +1,71 @@
+/* This is all potentially temporary/short-term styles I am using while I am building and testing; long-term styles are in the style.css file*/
+/* ---------- Coming Soon ---------- */
+.soon {
+  text-align: center;
+  text-decoration: none;
+  color: #78b8ec;
+  font-weight: bolder;
+}
+/* ---------- Home Page ---------- */
+#cont {
+  font-style: italic;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  display: none;
+}
+
+#moreBtn {
+  background-color: #31045a;
+  color: #ffffff;
+  width: 110px;
+  height: 34px;
+  margin-top: 10px;
+  font-family: 'Raleway';
+  font-weight: 500;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 1px #664a81;
+  font-size: 15px;
+}
+
+#moreBtn:hover {
+  background-color: #f3b1dd;
+  color: #000000;
+}
+
+.in-progress {
+  font-size: 24px;
+  text-align: center;
+  color: #f3b1dd;
+  margin: 0px 35px 30px 35px;
+}
+
+@media (max-width: 478px) and (min-width: 320px) {
+  .in-progress {
+    margin: 15px 8px;
+  }
+
+  #cont {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .in-progress {
+    margin: 0px 140px;
+  }
+}
+
+@media (min-width: 1040px) {
+  .in-progress {
+    margin: 0px 280px;
+  }
+}
+
+/* ---------- Project Pages ---------- */
+
+/* ---------- Skills Page ---------- */
+.update-note {
+  font-size: 17px;
+  color: #b8c2eb;
+}

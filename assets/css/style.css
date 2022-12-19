@@ -1,0 +1,692 @@
+body {
+  background-image: linear-gradient(#21035a, #13035a, #03135a, #03295a);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #5d5e6d;
+  color: #f2e8e6;
+  font-family: 'Fira Sans', sans-serif, Arial;
+  font-weight: 300;
+  margin: 24px;
+  border: 4px solid #2c258f;
+  box-shadow: /*40px 40px 40px 80px #5485cf80*/ #08000c 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, #006eff 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif, Arial;
+  font-weight: 300;
+}
+h1 {
+  font-size: 44px;
+  color: #fff;
+  /* text-decoration: underline solid #78b8ec 1px; */
+}
+h2 {
+  font-size: 34px;
+  text-decoration: underline solid #78b8ec 1px;
+  color: #fff;
+}
+h3 {
+  font-size: 30px;
+  color: #bad9f2;
+}
+h4 {
+  font-size: 28px;
+  color: #bad9f2;
+}
+h5 {
+  font-size: 26px;
+  color: #bad9f2;
+}
+
+h6 {
+  font-size: 26px;
+  color: #bad9f2;
+}
+.about h4 {
+  margin: 4px;
+  font-weight: 400;
+}
+
+.contact h5 {
+  margin: 35px 25px 0px 4px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.about-img {
+  display: none;
+}
+
+.title {
+  text-align: center;
+}
+
+.title-portfolio {
+  margin-bottom: 5px;
+}
+.title-name {
+  margin-top: 5px;
+  font-size: 30px;
+}
+
+.info {
+  margin: 0px 35px;
+}
+.info-welcome {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px 0px 0px 10px;
+}
+
+.welcome {
+  grid-area: 1/1/2/3;
+}
+
+.welcome-img {
+  grid-area: 1/3/2/4;
+}
+
+.welcome-text {
+  color: #ffffff;
+  margin: 40px 20px 10px 0px;
+  text-align: center;
+  /*  display: inline-flex; */
+  text-transform: uppercase;
+  font-size: 26px;
+}
+
+.about-text {
+  text-align: justify;
+}
+.about-img {
+  margin: 50px 0px 0px 20px;
+}
+.laura-img {
+  width: 110px;
+  border-radius: 20px;
+  border: 4px solid rgb(44, 37, 143);
+  box-shadow: 2px 2px 2px 1px rgba(69, 135, 211, 0.5);
+}
+.img-linkedin {
+  width: 70px;
+  margin: 5px 0px 0px 60px;
+}
+.contact,
+.contact-email {
+  color: #f2e8e5;
+  text-align: left;
+}
+
+.contact-grid {
+  display: grid;
+}
+/* --------LOGO -------- */
+.logo {
+  text-align: right;
+}
+.logo-img {
+  width: 95px;
+}
+.email-address:hover {
+  color: #a0a5ec;
+}
+a {
+  color: #78b8ec;
+  text-decoration: none;
+}
+
+/* ----------NAVIGATION ---------- */
+
+.navigation {
+  margin: 10px;
+}
+
+.nav-page {
+  padding: 14px 0px;
+  list-style: none;
+  color: #000;
+  background-color: FFF;
+}
+.page-name {
+  font-size: 20px;
+}
+.menu {
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  left: 100%;
+  right: 0;
+  top: 1.5rem;
+  flex-direction: row;
+  text-align: center;
+  margin: 15px 140px 0px 90px;
+  gap: 0.5rem;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.mobile-icon {
+  display: block;
+  cursor: pointer;
+  left: 32px;
+  top: 3rem;
+  position: absolute;
+}
+
+.menu-line {
+  display: block;
+  width: 40px;
+  height: 5.5px;
+  margin: 0px 0px 8px 8px;
+  background-color: #fff;
+  border-radius: 13px;
+}
+.menu.active {
+  left: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #c8d7ef;
+  font-weight: 500;
+}
+
+/* ---- FOOTER ---- */
+footer {
+  font-size: 13px;
+  padding: 10px;
+  text-align: right;
+  color: #bad9f2;
+}
+
+/* -------------HOME @media------------- */
+/* ---------min-width 768--------- */
+@media (min-width: 768px) {
+  body {
+    margin: 50px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+  h4 {
+    font-size: 32px;
+  }
+  h5 {
+    font-size: 30px;
+  }
+  .logo {
+    text-align: left;
+    margin-top: 0px;
+  }
+  .logo-img {
+    width: 140px;
+  }
+  .info-welcome {
+    display: block;
+  }
+
+  .welcome {
+    margin: 0px 0px;
+  }
+  .welcome-text {
+    font-size: 36px;
+  }
+
+  .welcome-img-mobile {
+    display: none;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .about-text {
+    grid-area: 1/1/2/4;
+  }
+  .about-img {
+    display: block;
+    margin: 60px 0px 0px 40px;
+    grid-area: 1/4/2/5;
+  }
+  .laura-img {
+    width: 170px;
+  }
+  .contact-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-email {
+    grid-area: 1/1/2/3;
+  }
+
+  .contact-img {
+    grid-area: 1/3/2/4;
+  }
+  .img-linkedin {
+    margin: 0px;
+  }
+
+  .logo-img:hover {
+    content: url(../img/logo-laura-2.svg);
+  }
+
+  /* ---------- NAVIGATION 768 ---------- */
+  .nav-menu {
+    display: block;
+  }
+  .page-name {
+    font-size: 28px;
+  }
+  .menu {
+    transition: none;
+    margin: 50px 170px 0px 250px;
+    left: 0;
+    gap: 3rem;
+  }
+
+  .mobile-icon {
+    display: none;
+  }
+
+  a:hover {
+    color: #78b8ec;
+  }
+}
+/* ---------min-width 1040--------- */
+@media (min-width: 1040px) {
+  body {
+    /*  margin: 60px; */
+  }
+  .menu {
+    margin: 60px 240px 0px 300px;
+    left: 0;
+    gap: 3rem;
+  }
+
+  .page-name {
+    font-size: 32px;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .about-text {
+    grid-area: 1/1/2/5;
+  }
+  .about-img {
+    display: block;
+    margin-top: 50px;
+    grid-area: 1/5/2/6;
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-email {
+    grid-area: 1/1/2/2;
+  }
+
+  .contact-img {
+    grid-area: 1/2/2/3;
+  }
+}
+
+/* ---------max 410/min 320--------- */
+@media (max-width: 410px) and (min-width: 320px) {
+  body {
+    margin: 14px;
+  }
+  .logo-img {
+    width: 70px;
+  }
+  .menu {
+    margin: 15px 100px 0px 70px;
+    gap: 0.25rem;
+    top: 0.5rem;
+  }
+  .mobile-icon {
+    left: 16px;
+    top: 2rem;
+  }
+
+  .menu-line {
+    width: 35px;
+    height: 4.5px;
+    margin-left: 8px;
+    margin: 0px 0px 8px 8px;
+  }
+  .page-name {
+    font-size: 18px;
+  }
+
+  .title-portfolio {
+    margin-bottom: 5px;
+    font-size: 36px;
+  }
+  .title-name {
+    margin-top: 5px;
+    font-size: 26px;
+  }
+
+  .info {
+    margin: 0px 18px;
+  }
+  .info-welcome {
+    margin: 5px;
+  }
+
+  .welcome {
+    margin-top: ;
+  }
+  .welcome h3 {
+    font-size: 23px;
+    margin-top: 5px;
+  }
+  .welcome-text {
+    font-size: 24px;
+    margin-top: 8px;
+  }
+  .logo-img {
+    width: 70px;
+  }
+
+  .laura-img {
+    width: 80px;
+    margin-left: 20px;
+  }
+  .contact-grid {
+    display: block;
+  }
+
+  .img-linkedin {
+    margin-left: 10px;
+    width: 60px;
+  }
+}
+/* --------------- Sub-pages --------------- */
+.sub-page-info {
+  margin: 0px 30px;
+}
+
+.linked-title:hover {
+  text-decoration: underline;
+  color: #a0a5ec;
+}
+
+.linked-title {
+  text-align: center;
+}
+
+/* --------------- Main Project Page --------------- */
+.project-names {
+  font-size: 24px;
+  list-style: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* --------------- Main Project Page --------------- */
+/* ---------min-width 768--------- */
+@media (min-width: 768px) {
+  .project-names {
+    font-size: 26px;
+    text-align: left;
+  }
+}
+
+/* --------------- Projects Page --------------- */
+.converter-temp {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+
+  margin: 0px 10px;
+}
+.converter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  align-content: center;
+}
+
+.temp {
+  width: 50px;
+}
+#degree-c {
+  grid-area: 1/2/2/3;
+}
+#degree-f {
+  grid-area: 2/2/3/3;
+}
+#celsius {
+  grid-area: 1/3/2/4;
+}
+#fahrenheit {
+  grid-area: 2/3/3/4;
+}
+
+.temp-name {
+  padding: 2px 20px;
+  background-color: rgb(31, 31, 126);
+  border: 1.5px solid rgb(77, 77, 155, 0.8);
+}
+/*.degree-k{
+  grid-area: ; 3/1/4/3
+}
+.degree-n{
+  grid-area: ; 4/1/5/3
+} */
+
+.sub-page-info-p {
+  text-align: justify;
+}
+/* -----Graphics Page----- */
+
+.my-graphics {
+  margin-left: 20px;
+}
+
+.graphics-logo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* justify-content:space-around; */
+  gap: 0.5rem;
+
+  margin: 5px;
+}
+
+.logo-1 {
+  grid-area: 1/1/2/2;
+}
+.logo-2 {
+  grid-area: 1/2/2/3;
+}
+
+.logo-position {
+  width: 75%;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-style: italic;
+  text-align: left;
+}
+
+.logo-caption-1 {
+  grid-area: 2/1/3/2;
+}
+
+.logo-caption-2 {
+  grid-area: 2/2/3/3;
+}
+.bcam-ribbon {
+  width: 65%;
+}
+
+/*min-width 768*/
+@media (min-width: 768px) {
+  .converter-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0px 150px;
+  }
+
+  .logo-position {
+    max-width: 285px;
+    min-width: 250px;
+  }
+
+  .bcam-ribbon {
+    max-width: 40%;
+  }
+}
+/* --------------- Projects Page --------------- */
+/* ---------max 410/min 320---------*/
+@media only screen and (max-width: 410px) and (min-width: 320px) {
+  .converter-temp {
+    /* margin: 0px; */
+  }
+}
+
+/* --------------- Skills Page --------------- */
+
+.skills-list {
+  list-style: none;
+  line-height: 180%;
+  font-size: 24px;
+}
+
+.skills-list li {
+  display: block;
+  text-align: left;
+}
+.sub-list {
+  font-size: 20px;
+  color: #b8c2eb;
+}
+/* -------------SKILLS @media------------- */
+/* ---------min-width 768--------- */
+@media (min-width: 768px) {
+  .skills-list {
+    text-align: left;
+  }
+}
+/* ------------- BLOG ------------- */
+.blog-side-bar {
+  display: none;
+}
+
+/*.blog-updates {
+    font-size: 36px;
+    margin-top: 30px;
+    margin: 20px 0px 0px 10px;
+    text-decoration: underline;
+    color: #bad9f2;
+  } */
+
+.blog-grid {
+  display: block;
+  margin: 0px 12px;
+}
+.toggle {
+  color: #f3b1dd;
+  font-weight: 500;
+  display: block;
+}
+
+#toggle-rules {
+  display: block;
+}
+
+.toggle:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.more {
+  display: none;
+}
+
+.blog-title {
+  font-size: 32px;
+  color: #bad9f2;
+}
+
+/* -------------BLOG @media------------- */
+/* ---------min-width 768--------- */
+@media (min-width: 768px) {
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 24px;
+  }
+
+  .blog-body {
+    grid-area: 1 / 2 / 4 / 5;
+    margin: 20px 0px;
+  }
+
+  .blog-side-bar {
+    display: block;
+    grid-area: 1 / 1 / 4 / 2;
+    text-align: left;
+    margin: 0px;
+  }
+  .more {
+    display: block;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .blog-updates {
+    font-size: 24px;
+    margin-top: 30px;
+    margin: 20px 0px 0px 10px;
+    text-decoration: underline;
+    color: #bad9f2;
+  }
+  .update-list li {
+    list-style: none;
+    margin: 10px 5px 5px 0px;
+    font-size: 17px;
+    font-weight: bolder;
+  }
+
+  .update-list {
+    padding-left: 10px;
+  }
+  .blog-date {
+    font-size: 16px;
+  }
+}
+/* -------------BLOG @media------------- */
+/* ---------min-width 1200--------- */
+@media (min-width: 1200px) {
+  .blog-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .blog-body {
+    grid-area: 1 / 2 / 4 /6;
+  }
+}
